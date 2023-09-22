@@ -114,7 +114,7 @@
         <div class="row">
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div class="icon-box">
-              <div class="icon"><i class="bx bx-box"></i></div>
+              <div class="icon"><i class="bx bx-link"></i></div>
               <h4><a href="">Strength and durability</a></h4>
               <p>Corrugated boxes are known for their ability to withstand stacking, crushing, and rough handling during transit.</p>
             </div>
@@ -122,7 +122,7 @@
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
             <div class="icon-box">
-              <div class="icon"><i class="bx bx-file"></i></div>
+              <div class="icon"><i class="bx bx-wrench"></i></div>
               <h4><a href="">Customizability</a></h4>
               <p>They can be easily customized in terms of size, shape, and printing to reflect branding.</p>
             </div>
@@ -687,10 +687,11 @@
           </div>
 
         </div>
+        <!-- action="forms/contact.php" method="post" -->
 
         <div class="row mt-5 justify-content-center">
           <div class="col-lg-10">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form onsubmit="sendEmail(); reset(); return false;"  role="form" class="php-email-form" action="forms/contact.php" method="post">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -703,7 +704,7 @@
                 <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
               </div>
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                <textarea class="form-control" name="message" rows="5" id="message" placeholder="How can we help you?" required></textarea>
               </div>
               <div class="my-3">
                 <div class="loading">Loading</div>
@@ -810,6 +811,26 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+    function sendEmail(){
+      Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "tejdoshi5@gmail.com",
+    Password : "2847F7D42C58128C3EA83D6268100DD8FC1E",
+    To : 'dishant.mehta@dmhpackagingllp.com',
+    From : "tejdoshi5@gmail.com",
+    Subject : "New enquiry",
+    Body : "Name:-" + document.getElementById('name').value +
+    "<br> Email:- " + document.getElementById('email').value +
+    "<br> Subject:- " + document.getElementById('subject').value +
+    "<br> Message:- " + document.getElementById('message').value
+}).then(
+  message => alert(message)
+);
+    }
+    
+  </script>
 
 </body>
 

@@ -735,10 +735,21 @@
               </div>
             </div>
 
+            <div>
+              <div id="map" class="my-5">
+    
+              </div>
+            </div>
+
           </div>
 
         </div>
         <!-- action="forms/contact.php" method="post" -->
+        <div class="section-title">
+          <h2>Get in touch</h2>
+          <p>Magnam dolores commodi suscipit eius consequatur ex aliquid fuga</p>
+        </div>
+
 
         <div class="row mt-5 justify-content-center">
           <div class="col-lg-10">
@@ -767,11 +778,7 @@
           </div>
 
         </div>
-        <div>
-          <div id="map" class="mx-auto">
-
-          </div>
-        </div>
+        
 
       </div>
     </section><!-- End Contact Section -->
@@ -884,10 +891,14 @@
 
   <!-- js for leadlet maps -->
   <script>
-    var map = L.map('map', {
-    center: [51.505, -0.09],
-    zoom: 13
-    });
+    var map = L.map('map',{center : [23.1142197,72.6288903], zoom: 14.3});
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    // attribution: '&copy; <a href="http://www.openstreetmap.org/copyright"></a>'
+    }).addTo(map);
+    L.marker([23.1142197,72.6288903]).addTo(map)
+    .bindPopup('Entrepreneurship Development<br> Institute Of India')
+    .openPopup(); 
   </script>
 
 </body>

@@ -14,8 +14,8 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/dmh logo1.png" rel="icon">
+  <link href="assets/img/dmh logo1.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -29,6 +29,10 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- leaflet-map cdn -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 
   <!-- =======================================================
   * Template Name: Lumia
@@ -96,7 +100,7 @@
     <div class="container text-center text-md-left" data-aos="fade-up">
       <h1>Welcome to <span>DMH Packaging LLP</span></h1>
       <h2> - Your Trusted Source for Quality Packaging</h2>
-      <a href="#about" class="btn-get-started scrollto">Get Started</a>
+      <a href="#what-we-do" class="btn-get-started scrollto">Get Started</a>
     </div>
   </section><!-- End Hero -->
 
@@ -286,50 +290,61 @@
 
         <div class="section-title">
           <h2>Services</h2>
-          <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem</p>
+          <p>At DMH Packaging, we are dedicated to providing a comprehensive range of corrugated packaging services tailored to meet the diverse needs of our valued clients. Our commitment to quality, innovation, and sustainability sets us apart as your trusted packaging partner.</p>
         </div>
 
         <div class="row">
           <div class="col-md-6">
             <div class="icon-box">
-              <i class="bi bi-briefcase"></i>
-              <h4><a href="#">Lorem Ipsum</a></h4>
-              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+              <i class="bi bi-wrench"></i>
+              <h4><a href="#">Custom Corrugated Boxes:</a></h4>
+              <p><strong>Tailored Solutions:</strong> We specialize in creating custom corrugated boxes that precisely match your unique packaging requirements. Whether it's a specific size, shape, or design, we'll work closely with you to bring your vision to life.
+                <br>
+                <strong>Branding and Printing:</strong> Elevate your brand with our custom printing and branding services. Add logos, graphics, and messaging to make your packaging stand out on the shelf.</p>
             </div>
           </div>
           <div class="col-md-6 mt-4 mt-lg-0">
             <div class="icon-box">
-              <i class="bi bi-card-checklist"></i>
-              <h4><a href="#">Dolor Sitema</a></h4>
-              <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+              <i class="bi bi-boxes"></i>
+              <h4><a href="#">Stock Corrugated Boxes:</a></h4>
+              <p><strong>Ready-Made Solutions:</strong>Browse our selection of stock corrugated boxes, available in various sizes and styles for quick and convenient packaging solutions. 
+                <br>
+                <strong>Quick Turnaround:</strong> Our stock boxes are readily available and can be shipped to you with minimal lead time, perfect for those urgent packaging needs</p>
             </div>
           </div>
           <div class="col-md-6 mt-4">
             <div class="icon-box">
-              <i class="bi bi-bar-chart"></i>
-              <h4><a href="#">Sed ut perspiciatis</a></h4>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+              <i class="bi bi-printer"></i>
+              <h4><a href="#">Printing And Branding:</a></h4>
+              <p><strong>High-Quality Printing:</strong> Our advanced printing capabilities ensure sharp, vibrant, and consistent printing on your corrugated boxes.
+                <br>
+                <strong>Custom Graphics:</strong>From logos to product information, we can incorporate your unique graphics to enhance your brand's visibility.</p>
             </div>
           </div>
           <div class="col-md-6 mt-4">
             <div class="icon-box">
-              <i class="bi bi-binoculars"></i>
-              <h4><a href="#">Nemo Enim</a></h4>
-              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+              <i class="bi bi-recycle"></i>
+              <h4><a href="#">Sustainable Packaging:</a></h4>
+              <p><strong>Eco-Friendly Materials:</strong> We are committed to sustainability and offer eco-friendly packaging solutions. Our corrugated boxes are made from recycled materials, and we strive to minimize our environmental impact.
+                <br>
+                <strong>Consultation:</strong> Let us help you make environmentally responsible packaging choices that align with your sustainability goals.</p>
             </div>
           </div>
           <div class="col-md-6 mt-4">
             <div class="icon-box">
-              <i class="bi bi-brightness-high"></i>
-              <h4><a href="#">Magni Dolore</a></h4>
-              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+              <i class="bi bi-person-workspace"></i>
+              <h4><a href="#">Packaging Consultation:</a></h4>
+              <p><strong>Expert Guidance:</strong> Our knowledgeable team is available to provide packaging consultations. We can help you optimize your packaging processes for efficiency and cost-effectiveness.
+                <strong>Material Recommendations:</strong> We'll recommend the most suitable materials and styles to protect your products during shipping and storage.</p>
             </div>
           </div>
           <div class="col-md-6 mt-4">
             <div class="icon-box">
-              <i class="bi bi-calendar4-week"></i>
-              <h4><a href="#">Eiusmod Tempor</a></h4>
-              <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+              <i class="bi bi-truck"></i>
+              <h4><a href="#">Shipping and Logistics Support:</a></h4>
+              <p><strong>Timely Delivery:</strong> We understand the importance of timely delivery. Count on us to ensure your packaging materials arrive when you need them.
+                <br>
+                <strong>Inventory Management:</strong> Streamline your supply chain by taking advantage of our inventory management services, which help you maintain optimal stock levels.</p>
             </div>
           </div>
         </div>
@@ -342,17 +357,17 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Portfolio</h2>
-          <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit</p>
+          <h2>Our Products</h2>
+          <p>At DMH Packaging, we take pride in offering a diverse range of corrugated packaging products that cater to various industries and packaging needs.</p>
         </div>
 
         <div class="row">
           <div class="col-lg-12">
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-web">Web</li>
+              <li data-filter=".filter-app">Corrugated Boxes</li>
+              <li data-filter=".filter-card">Corrugated Sheets/Rolls</li>
+              <li data-filter=".filter-web">Corrugated cartons</li>
             </ul>
           </div>
         </div>
@@ -362,14 +377,14 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
             <div class="portfolio-wrap">
               <figure>
-                <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
-                <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="link-preview portfolio-lightbox" title="Preview"><i class="bx bx-plus"></i></a>
+                <img src="assets/img/portfolio/rsc.jpeg" class="img-fluid" alt="">
+                <a href="assets/img/portfolio/rsc.jpeg" data-gallery="portfolioGallery" class="link-preview portfolio-lightbox" title="Preview"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bx bx-link"></i></a>
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="portfolio-details.html">App 1</a></h4>
-                <p>App</p>
+                <h4><a href="portfolio-details.html">Regular Slotted Container</a></h4>
+                <p>Corrugated Boxes</p>
               </div>
             </div>
           </div>
@@ -377,14 +392,14 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
             <div class="portfolio-wrap">
               <figure>
-                <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
-                <a href="assets/img/portfolio/portfolio-2.jpg" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Preview"><i class="bx bx-plus"></i></a>
+                <img src="assets/img/portfolio/overlap.jpeg" class="img-fluid" alt="">
+                <a href="assets/img/portfolio/overlap.jpeg" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Preview"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bx bx-link"></i></a>
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="portfolio-details.html">Web 3</a></h4>
-                <p>Web</p>
+                <h4><a href="portfolio-details.html">Overlap Slotted Cartons</a></h4>
+                <p>Corrugated Cartons</p>
               </div>
             </div>
           </div>
@@ -392,14 +407,14 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
             <div class="portfolio-wrap">
               <figure>
-                <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
-                <a href="assets/img/portfolio/portfolio-3.jpg" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Preview"><i class="bx bx-plus"></i></a>
+                <img src="assets/img/portfolio/duplex.jpeg" class="img-fluid" alt="">
+                <a href="assets/img/portfolio/duplex.jpeg" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Preview"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bx bx-link"></i></a>
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="portfolio-details.html">App 2</a></h4>
-                <p>App</p>
+                <h4><a href="portfolio-details.html">Duplex Box</a></h4>
+                <p>Corrugated Boxes</p>
               </div>
             </div>
           </div>
@@ -407,14 +422,14 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
             <div class="portfolio-wrap">
               <figure>
-                <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
-                <a href="assets/img/portfolio/portfolio-4.jpg" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Preview"><i class="bx bx-plus"></i></a>
+                <img src="assets/img/portfolio/sheets.jpeg" class="img-fluid" alt="">
+                <a href="assets/img/portfolio/sheets.jpeg" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Preview"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bx bx-link"></i></a>
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="portfolio-details.html">Card 2</a></h4>
-                <p>Card</p>
+                <h4><a href="portfolio-details.html">Corrugated Sheets</a></h4>
+                <p>Sheets/Rolls</p>
               </div>
             </div>
           </div>
@@ -422,14 +437,14 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
             <div class="portfolio-wrap">
               <figure>
-                <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
-                <a href="assets/img/portfolio/portfolio-5.jpg" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Preview"><i class="bx bx-plus"></i></a>
+                <img src="assets/img/portfolio/internal.jpeg" class="img-fluid" alt="">
+                <a href="assets/img/portfolio/internal.jpeg" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Preview"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bx bx-link"></i></a>
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="portfolio-details.html">Web 2</a></h4>
-                <p>Web</p>
+                <h4><a href="portfolio-details.html">Internal Section Cartons</a></h4>
+                <p>Corrugated Cartons</p>
               </div>
             </div>
           </div>
@@ -437,14 +452,14 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
             <div class="portfolio-wrap">
               <figure>
-                <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-                <a href="assets/img/portfolio/portfolio-6.jpg" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Preview"><i class="bx bx-plus"></i></a>
+                <img src="assets/img/portfolio/twopiece.jpeg" class="img-fluid" alt="">
+                <a href="assets/img/portfolio/twopiece.jpeg" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Preview"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bx bx-link"></i></a>
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="portfolio-details.html">App 3</a></h4>
-                <p>App</p>
+                <h4><a href="portfolio-details.html">Two Piece Conatiner</a></h4>
+                <p>Corrugated Boxes</p>
               </div>
             </div>
           </div>
@@ -452,14 +467,14 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
             <div class="portfolio-wrap">
               <figure>
-                <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-                <a href="assets/img/portfolio/portfolio-7.jpg" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Preview"><i class="bx bx-plus"></i></a>
+                <img src="assets/img/portfolio/roll.jpeg" class="img-fluid" alt="">
+                <a href="assets/img/portfolio/roll.jpeg" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Preview"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bx bx-link"></i></a>
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="portfolio-details.html">Card 1</a></h4>
-                <p>Card</p>
+                <h4><a href="portfolio-details.html">Corrugated Rolls</a></h4>
+                <p>Sheets/Rolls</p>
               </div>
             </div>
           </div>
@@ -467,14 +482,14 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp" data-wow-delay="0.1s">
             <div class="portfolio-wrap">
               <figure>
-                <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
-                <a href="assets/img/portfolio/portfolio-8.jpg" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Preview"><i class="bx bx-plus"></i></a>
+                <img src="assets/img/portfolio/tray.jpeg" class="img-fluid" alt="">
+                <a href="assets/img/portfolio/tray.jpeg" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Preview"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bx bx-link"></i></a>
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="portfolio-details.html">Card 3</a></h4>
-                <p>Card</p>
+                <h4><a href="portfolio-details.html">Corrugated Sheet Trays</a></h4>
+                <p>Sheets/Rolls</p>
               </div>
             </div>
           </div>
@@ -482,14 +497,14 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.2s">
             <div class="portfolio-wrap">
               <figure>
-                <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
-                <a href="assets/img/portfolio/portfolio-9.jpg" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Preview"><i class="bx bx-plus"></i></a>
+                <img src="assets/img/portfolio/half.jpeg" class="img-fluid" alt="">
+                <a href="assets/img/portfolio/half" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Preview"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bx bx-link"></i></a>
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="portfolio-details.html">Web 1</a></h4>
-                <p>Web</p>
+                <h4><a href="portfolio-details.html">Half Slotted Cartons</a></h4>
+                <p>Corrugated Cartons</p>
               </div>
             </div>
           </div>
@@ -500,7 +515,7 @@
     </section><!-- End Portfolio Section -->
 
     <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials section-bg">
+    <!-- <section id="testimonials" class="testimonials section-bg">
       <div class="container">
 
         <div class="section-title">
@@ -522,7 +537,7 @@
                 <h3>Saul Goodman</h3>
                 <h4>Ceo &amp; Founder</h4>
               </div>
-            </div><!-- End testimonial item -->
+            </div>
 
             <div class="swiper-slide">
               <div class="testimonial-item">
@@ -535,7 +550,7 @@
                 <h3>Sara Wilsson</h3>
                 <h4>Designer</h4>
               </div>
-            </div><!-- End testimonial item -->
+            </div>
 
             <div class="swiper-slide">
               <div class="testimonial-item">
@@ -548,7 +563,7 @@
                 <h3>Jena Karlis</h3>
                 <h4>Store Owner</h4>
               </div>
-            </div><!-- End testimonial item -->
+            </div>
 
             <div class="swiper-slide">
               <div class="testimonial-item">
@@ -561,7 +576,7 @@
                 <h3>Matt Brandon</h3>
                 <h4>Freelancer</h4>
               </div>
-            </div><!-- End testimonial item -->
+            </div>
 
             <div class="swiper-slide">
               <div class="testimonial-item">
@@ -574,14 +589,15 @@
                 <h3>John Larson</h3>
                 <h4>Entrepreneur</h4>
               </div>
-            </div><!-- End testimonial item -->
+            </div>
 
           </div>
           <div class="swiper-pagination"></div>
         </div>
 
       </div>
-    </section><!-- End Testimonials Section -->
+    </section> -->
+    <!-- End Testimonials Section -->
 
     <!-- ======= Team Section ======= -->
     <section id="team" class="team">
@@ -595,10 +611,11 @@
         <div class="row">
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div class="member">
-              <img src="assets/img/team/team-1.jpg" alt="">
+              <!-- <img src="assets/img/team/profile_thumbnail.png" alt=""> -->
               <h4>Walter White</h4>
               <span>Chief Executive Officer</span>
               <p>
+                Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut
                 Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut
               </p>
               <div class="social">
@@ -612,10 +629,11 @@
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div class="member">
-              <img src="assets/img/team/team-2.jpg" alt="">
+              <!-- <img src="assets/img/team/profile_thumbnail.png" alt=""> -->
               <h4>Sarah Jhinson</h4>
               <span>Product Manager</span>
               <p>
+                Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum rerum temporibus
                 Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum rerum temporibus
               </p>
               <div class="social">
@@ -629,10 +647,47 @@
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div class="member">
-              <img src="assets/img/team/team-3.jpg" alt="">
+              <!-- <img src="assets/img/team/profile_thumbnail.png" alt=""> -->
               <h4>William Anderson</h4>
               <span>CTO</span>
               <p>
+                Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara
+                Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara
+              </p>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mx-auto col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <!-- <img src="assets/img/team/profile_thumbnail.png" alt=""> -->
+              <h4>William Anderson</h4>
+              <span>CTO</span>
+              <p>
+                Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara
+                Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara
+              </p>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mx-auto col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <!-- <img src="assets/img/team/profile_thumbnail.png" alt=""> -->
+              <h4>William Anderson</h4>
+              <span>CTO</span>
+              <p>
+                Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara
                 Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara
               </p>
               <div class="social">
@@ -647,7 +702,8 @@
         </div>
 
       </div>
-    </section><!-- End Team Section -->
+    </section>
+    <!-- End Team Section -->
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact section-bg">
@@ -684,10 +740,21 @@
               </div>
             </div>
 
+            <div>
+              <div id="map" class="my-5">
+    
+              </div>
+            </div>
+
           </div>
 
         </div>
         <!-- action="forms/contact.php" method="post" -->
+        <div class="section-title">
+          <h2>Get in touch</h2>
+          <p>Magnam dolores commodi suscipit eius consequatur ex aliquid fuga</p>
+        </div>
+
 
         <div class="row mt-5 justify-content-center">
           <div class="col-lg-10">
@@ -716,6 +783,7 @@
           </div>
 
         </div>
+        
 
       </div>
     </section><!-- End Contact Section -->
@@ -778,21 +846,15 @@
 
       <div class="me-md-auto text-center text-md-start">
         <div class="copyright">
-          &copy; Copyright <strong><span>Lumia</span></strong>. All Rights Reserved
+          &copy; Copyright <strong><span>DMH Packaging LLP</span></strong>. All Rights Reserved
         </div>
-        <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/lumia-bootstrap-business-template/ -->
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-        </div>
+        
       </div>
       <div class="social-links text-center text-md-right pt-3 pt-md-0">
         <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
         <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
         <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <!-- <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a> -->
         <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
       </div>
     </div>
@@ -830,6 +892,18 @@
 );
     }
     
+  </script>
+
+  <!-- js for leadlet maps -->
+  <script>
+    var map = L.map('map',{center : [23.1142197,72.6288903], zoom: 14.3});
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    // attribution: '&copy; <a href="http://www.openstreetmap.org/copyright"></a>'
+    }).addTo(map);
+    L.marker([23.1142197,72.6288903]).addTo(map)
+    .bindPopup('Entrepreneurship Development<br> Institute Of India')
+    .openPopup(); 
   </script>
 
 </body>

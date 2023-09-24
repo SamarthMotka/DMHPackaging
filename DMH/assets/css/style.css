@@ -811,7 +811,7 @@ section {
 }
 
 .portfolio .portfolio-item figure {
-  background: #000;
+  /* background: #000; */
   overflow: hidden;
   height: 240px;
   position: relative;

@@ -721,6 +721,7 @@ section {
   border-radius: 6px;
   background: #fff;
   transition: ease-in-out 0.3s;
+  min-height: 270px;
 }
 
 .services .icon-box i {
@@ -754,6 +755,15 @@ section {
 
 .services .icon-box:hover h4 a {
   color: #3498db;
+}
+@media (min-width:768px) and (max-width:1200px){
+  .services .icon-box {
+    padding: 30px;
+    border-radius: 6px;
+    background: #fff;
+    transition: ease-in-out 0.3s;
+    min-height: 470px;
+  }
 }
 
 /*--------------------------------------------------------------

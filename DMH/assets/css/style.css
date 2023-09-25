@@ -778,6 +778,17 @@ section {
   margin: 0 0 35px 0;
   list-style: none;
   text-align: center;
+  
+}
+@media (max-width:768px){
+  .portfolio #portfolio-flters{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0 0 35px 0;
+    list-style: none;
+    text-align: center;
+  }
 }
 
 .portfolio #portfolio-flters li {

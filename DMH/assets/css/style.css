@@ -1381,6 +1381,9 @@ section {
   padding: 0;
   margin: 0;
 }
+.email-link{
+  margin-left: 5px !important;
+}
 
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
